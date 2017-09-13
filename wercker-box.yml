@@ -1,0 +1,11 @@
+name: angular-cli
+version: 0.0.1
+inherits: wercker/node
+type: main
+platform: ubuntu@12.04
+description: Angular CLI box
+keywords:
+  - angular
+script: |
+  sudo apt-get update -y
+  npm install -g @angular/cli@latest
